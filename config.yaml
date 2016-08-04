@@ -1,0 +1,23 @@
+---
+# Git address to the control repo
+control_repo: 'ssh://git@foobar.gov:7999/pup/control.git'
+
+# VM configuration
+linux_mem: '1024'
+linux_cpu: '1'
+windows_mem: '2048'
+windows_cpu: '1'
+
+puppet_master: 'puppet.foobar.gov'
+pe_version: ''
+
+# Probably shouldn't mess with these. Paths to where the control repo will be
+# cloned to and path to where module development will be done
+control_dir: 'control'
+modules_dir: 'modules'
+
+# Define system resources with an instance name
+instances:
+  'graylog':
+    mem: '4096'
+    cpu: '1'

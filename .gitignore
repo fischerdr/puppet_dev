@@ -1,0 +1,28 @@
+.DS_Store
+
+# Vim
+*~
+*.swp
+*.swo
+.tmp
+
+# Puppet module build
+pkg/
+
+# rspec fixtures
+spec/fixtures/
+
+# Bundler/Gem excludes
+Gemfile.lock
+vendor/
+.vagrant/
+.bundle/
+.bundler/
+.vendor/
+
+# Ignore the control_dir and module_dir
+control/
+modules/
+environments/
+
+tmp/

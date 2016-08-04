@@ -1,0 +1,14 @@
+---
+:backends:
+  - yaml
+
+:hierarchy:
+  - "node/%{clientcert}"
+  - "host/%{hostname}"
+  - "vagrant_%{is_vagrant}"
+  - "org_environment/%{org_environment}"
+  - "puppet_environment/%{environment}"
+  - common
+
+:yaml:
+  :datadir: "c:/vagrant/control/hieradata"

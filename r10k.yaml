@@ -1,0 +1,19 @@
+---
+#
+# r10k config file for puppet dev environment
+#
+# This will source from an upstream repository over SSH and deploy
+# environments to the relative 'environments/' directory, which is available
+# to Vagrant hosts.
+#
+# Optionally, the remote option below can be changed to 'control' to use the
+# locally cloned control repository as the source.  However, housekeeping of
+# the local clone is up to you.
+#
+#:cachedir: /opt/puppetlabs/puppet/cache/r10k
+:sources:
+  control:
+    basedir: environments
+    prefix: false
+    remote: ssh://git@foobar.gov:7999/pup/control.git
+#   remote: control
